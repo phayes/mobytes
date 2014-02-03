@@ -1,5 +1,8 @@
-// Mo'Bytes - more common []byte functions for golang
+/*
+Mo'Bytes - more common []byte functions for golang
 
+Functions include bitwise operatoins (AND, OR, XOR, NOT, and ANDNOT) and other useful functions for working with []byte's.
+*/
 package mobytes
 
 // Bitwise AND
