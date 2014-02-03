@@ -1,3 +1,5 @@
+// Mo'Bytes - more common []byte functions for golang
+
 package mobytes
 
 // Bitwise AND
@@ -51,11 +53,11 @@ func NOT(a []byte) []byte {
 }
 
 // Split the []byte every n bytes
-func SplitEvery(a []bytes, n int) [][]byte {
+func SplitEvery(a []byte, n int) [][]byte {
 	length := len(a)
 	result := make([][]byte, length/n)
-	i = 0
-	for j = 0; j <= length; j += n {
+	i := 0
+	for j := 0; j < length; j += n {
 		if j+n < length {
 			result[i] = a[j : j+n]
 		} else {
